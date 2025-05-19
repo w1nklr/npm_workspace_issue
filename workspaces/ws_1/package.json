@@ -1,0 +1,15 @@
+{
+  "name": "workspace_1",
+  "version": "1.0.0",
+  "description": "Test behavior in workspace",
+  "scripts": {
+    "test": "npm run fail && echo ERROR: echo is wrongly executed after previous failure",
+    "fail": "1 && echo Correctly not executed after failure"
+  },
+  "comments": {
+    "behavior": "npm run is not reporting the script failure starting with node 20.0.0"
+  },
+  "volta": {
+    "node": "19.9.0"
+  }
+}
